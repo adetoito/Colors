@@ -1,14 +1,15 @@
 package com.company;
 
 import java.util.*;
+import java.io.*;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in); Scanner sc2 = new Scanner(System.in);
         boolean looping = true; boolean looping2 = true;
         String response; String input = "";
-        int [] RGB = new int [2];
+        int [] RGB = new int [3];
         while (looping) {
             System.out.println("Are you inputting a color, a RGB triplet, or a hexadecimal?");
             System.out.println("Type in \"color\", \"rgb\", or \"hex\"?");
