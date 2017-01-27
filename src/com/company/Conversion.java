@@ -35,12 +35,11 @@ public class Conversion {
 
     public static void convertRGBIntoHex (int [] RGB) throws IOException {
         String hex;
-        StringBuffer sb = new StringBuffer();
-        for (int i = 0; i < RGB.length; i++) {
-            sb.append(RGB[0]);
-        }
-        hex = sb.toString();
-
+        String [] hexValues = new String [3];
+        hexValues[0] = Integer.toHexString(RGB[0]);
+        hexValues[1] = Integer.toHexString(RGB[1]);
+        hexValues[2] = Integer.toHexString(RGB[2]);
+        hex = hexValues[0] + hexValues[1] + hexValues[2];
         System.out.println("\nHEXADECIMAL: " + hex);
         System.out.println("RGB VALUES: " + RGB[0] + ", " + RGB[1] + ", " + RGB[2]);
 
