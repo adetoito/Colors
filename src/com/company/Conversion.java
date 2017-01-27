@@ -10,7 +10,8 @@ public class Conversion {
         int [] RGB = new int [3];
         boolean specific = false;
 
-        Scanner checkColors = new Scanner(new File("Colors.txt"));
+        File colors = new File("src/Colors.txt");
+        Scanner checkColors = new Scanner(colors);
         while (checkColors.hasNext()) {
             String line = checkColors.nextLine();
             String [] divisions = line.split("\\s+");
@@ -45,7 +46,8 @@ public class Conversion {
 
         boolean specific = false;
 
-        Scanner checkColors = new Scanner(new File("Colors.txt"));
+        File colors = new File("src/Colors.txt");
+        Scanner checkColors = new Scanner(colors);
         while (checkColors.hasNext()) {
             String line = checkColors.nextLine();
             String [] divisions = line.split("\\s+");
@@ -71,7 +73,8 @@ public class Conversion {
 
         boolean specific = false;
 
-        Scanner checkColors = new Scanner(new File("Colors.txt"));
+        File colors = new File("src/Colors.txt");
+        Scanner checkColors = new Scanner(colors);
         while (checkColors.hasNext()) {
             String line = checkColors.nextLine();
             String [] divisions = line.split("\\s+");
